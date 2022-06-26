@@ -1,4 +1,8 @@
 /* Add a black background color to the top navigation */
+@import "index_about.css";
+@import "index_blog.css";
+@import "index_contact.css";
+
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -78,3 +82,15 @@ a.read-more { background-color: #93291b; border: 1px solid #333333; border-radiu
 
 
 a.read-more:hover { background-color: #be3523; border-radius: 3px 3px 3px 3px; text-decoration: none; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+  font-size: 30px;
+  text-align: center;
+}
