@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Hind+Siliguri|Josefin+Sans:700|Overpass&display=swap");
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.app-container {
+	/* display: grid; */
+	grid-template-columns: 100%;
+	width: 40%;
+	grid-template-rows: minmax(50px, auto);
+	grid-template-areas:
+		"hd"
+		"zip"
+		"feeling"
+		"add"
+		"entry";
+}
+
+#app {
+	margin: 30px auto;
+	padding: 2rem 1.25rem;
+	position: relative;
+	background-color: white;
+	margin-bottom: 3rem;
+	z-index: 999;
+	box-shadow: 2px 5px 6px 6px black, 9px 11px 11px 0 black;
+	color: black;
+	grid-gap: 1em;
+	font-size: 20px;
+	font-family: "Hind Siliguri", sans-serif;
+	line-height: 2.5em;
+}
+
+
+.app-grid {
+	display: flex;
+}
+.entry {
+	width: 40%;
+	margin: 20px auto;
+	margin-top: 30px;
+	margin-bottom: 45px;
+	grid-area: entry;
+	padding: 9px 35px 92px 19px;
+	box-shadow: 2px 5px 6px 6px black, 9px 11px 11px 0 black;
+}
+
+#entryHolder {
+	color: black;
+}
+
+#date {
+	color: black;
+	font-weight: bold;
+}
+
+
+
+
+
+.zip {
+	grid-area: zip;
+}
+
+.feel {
+	grid-area: feeling;
+}
+
+.generate-button {
+	grid-area: add;
+}
+
+
+.title {
+	font-family: sans-serif;
+	margin-bottom: 25px;
+	font-size: 23px;
+	color: green;
+	margin-left: 0px;
+	text-align: center;
+}
+
+label {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	color: #221e1d;
+	text-align: cenryer;
+}
+
+.zipCodeInput {
+	height: 32px;
+	width: 180px;
+	background: white;
+	color: #000;
+	font-size: 16px;
+	font-family: "Overpass", sans-serif;
+	border: 1px solid black;
+	padding-left: 5px;
+	text-align: centryer;
+	margin: 0 auto;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	border-radius: 10px;
+	background: green;
+	color: aliceblue;
+	font-size: 23px;
+	font-family: "Overpass", sans-serif;
+	border: none;
+	box-shadow: 2px 4px 5px #444;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 33px;
+	color: #221e1d;
+}
+
+textarea {
+	background: white;
+	color: dimgrey;
+	padding: 5px;
+	font-size: 15px;
+	font-family: sans-serif;
+	border: 1px solid black;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
