@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Evaluate a news article or text with Aylient NLP</title>
+    </head>
+
+    <body>
+
+        <main>
+    
+
+
+
+            <h1>Evaluate news article with NLP</h1>
+            <section id="#input">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input class="urlInput" id="name" type="url" name="test-url" value=""  placeholder="Enter article URL">
+                    <input class="button" type="submit" name="Analyze" value="Analyze" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <div>
+
+                        <h5 id="urlValidator" style="color:red"></h5>
+                    </div>
+                </form>
+            <section>
+
+            <section class="url-results">
+                    <ul>
+                        <li>
+                            <h3>Text Polarity:</h3>
+                            <p id="polarity"></p>
+                            <h4>Confidence: </h4>
+                            <p id="polarity_confidence"></p>
+                        </li>
+    
+                        <li>
+                            <h3>Text Subjectivity:</h3>
+                            <p id="subjectivity"></p>
+                            <h4>Confidence: </h4>
+                            <p id="subjectivity_confidence"></p>
+                        </li>
+    
+                        <h3>Text Excerpt:</h3>
+                        <p id="excerpt"></p>
+                    </ul>
+                </section>
+        </main>
+
+
+        <script>
+                if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js').then(registration =>{
+                        console.log('SW registered successfuly: ', registration);
+                    });
+                });
+                }else{
+                console.log("Service Working not supported");
+                    }
+        </script>
+
+    </body>
+</html>
