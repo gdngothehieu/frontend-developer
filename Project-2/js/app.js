@@ -21,8 +21,8 @@ const activateSection = () => {
     navbarLinkId.classList.remove("your-active-class");
     navbarLinkId.style.cssText = "background-color: black";
     if (
-      Math.floor(sections[i].getBoundingClientRect().top) < 150 &&
-      Math.floor(sections[i].getBoundingClientRect().top) >= -150
+      Math.floor(sections[i].getBoundingClientRect().top) <= 100 &&
+      Math.floor(sections[i].getBoundingClientRect().top) >= -100
     ) {
       navbarLinkId.classList.add("your-active-class");
       navbarLinkId.style.cssText = "background-color: yellow;";
