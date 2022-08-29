@@ -19,8 +19,7 @@ const activateSection = () => {
     const navbarLinkId = document.getElementById(`menu__link${sections[i].id}`);
 
     navbarLinkId.classList.remove("your-active-class");
-    navbarLinkId.style.cssText =
-      "background-color: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%)";
+    navbarLinkId.style.cssText = "background-color: black";
     if (
       Math.floor(sections[i].getBoundingClientRect().top) < 150 &&
       Math.floor(sections[i].getBoundingClientRect().top) >= -150
