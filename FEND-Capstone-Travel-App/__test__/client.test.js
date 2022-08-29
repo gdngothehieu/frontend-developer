@@ -5,7 +5,7 @@ import {
   getGeonameData,
 } from "../src/client/js/app";
 
-describe("handleSubmit()", () => {
+describe("Testing client app", () => {
   test("It should success", () => {
     expect(handleSubmit).toBeDefined();
     expect(getPixabayImages).toBeDefined();
