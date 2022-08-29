@@ -5,11 +5,11 @@ const initiateNavBar = () => {
   const navbar = document.getElementById("navbar__list");
   for (let i = 0; i < sections.length; i++) {
     const sectionID = sections[i].id;
-    const sectionDataNav = sections[i].dataset.nav;
+    const secNav = sections[i].dataset.nav;
 
     listUI += `<li class="menu__link" id=${
       `menu__link` + sectionID
-    }><a href="#${sectionID}">${sectionDataNav}</a></li>`;
+    }><a href="#${sectionID}">${secNav}</a></li>`;
   }
   navbar.innerHTML = listUI;
 };
