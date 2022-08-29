@@ -11,6 +11,10 @@ exports.homePage = (req, res) => {
 
 exports.getGeoNameLocations = async (req, res) => {
   try {
+    if (!req.body.BASE_URL) {
+      res.json({ message: "Invalid URL", status: "Failed" }).status(400);
+      return;
+    }
     const response = await axios
       .get(`${req.body.BASE_URL}&username=${GEONAMES_USERNAME}`)
       .then((data) => {
@@ -24,6 +28,10 @@ exports.getGeoNameLocations = async (req, res) => {
 
 exports.getWeatherBitForecast = async (req, res) => {
   try {
+    if (!req.body.BASE_URL) {
+      res.json({ message: "Invalid URL", status: "Failed" }).status(400);
+      return;
+    }
     const response = await axios.get(
       `${req.body.BASE_URL}&key=${WEATHERBIT_API_KEY}`
     );
@@ -35,6 +43,10 @@ exports.getWeatherBitForecast = async (req, res) => {
 
 exports.getPixabayImages = async (req, res) => {
   try {
+    if (!req.body.BASE_URL) {
+      res.json({ message: "Invalid URL", status: "Failed" }).status(400);
+      return;
+    }
     const response = await axios.get(
       `${req.body.BASE_URL}&key=${PIXABAY_API_KEY}`
     );
