@@ -6,3 +6,16 @@
     font-size: 30px;
     text-align: center;
   }
+
+  #card-blog {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../imgs/homebkg.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+
+  }
+
+  

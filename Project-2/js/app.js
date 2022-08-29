@@ -1,9 +1,4 @@
 const sections = document.querySelectorAll("section");
-const NavTag = document.getElementById("navbar_header");
-const sectionNavPositions = [];
-const prePosition = 0;
-const currentPosition = 0;
-
 const initiateNavBar = () => {
   let listUI = "";
 
