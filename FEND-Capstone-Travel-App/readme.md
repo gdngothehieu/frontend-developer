@@ -7,6 +7,7 @@ Run:
 - npm run build-dev
 
 Enter: Tokyo, pick a date then click Search
+
 Test:
 
 - npm run test
