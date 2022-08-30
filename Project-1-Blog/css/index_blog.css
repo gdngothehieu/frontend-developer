@@ -23,7 +23,7 @@
   }
 
   .italic-line{
-    font-weight: bold; font-style: italic; display: inline;
+    font-weight: bold; font-style: italic; display: inline; color: purple
   }
   .description-box{
     padding: 30px; margin: 25px; border: 1px solid black;
