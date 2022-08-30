@@ -20,12 +20,17 @@ const activateSection = () => {
 
     navbarLinkId.classList.remove("your-active-class");
     navbarLinkId.style.cssText = "background-color: black";
+    sections[i].classList.remove("your-active-class");
+    sections[i].style.cssText =
+      "background-color: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%)";
     if (
-      Math.floor(sections[i].getBoundingClientRect().top) <= 100 &&
-      Math.floor(sections[i].getBoundingClientRect().top) >= -100
+      Math.floor(sections[i].getBoundingClientRect().top) <= 125 &&
+      Math.floor(sections[i].getBoundingClientRect().top) >= -125
     ) {
       navbarLinkId.classList.add("your-active-class");
       navbarLinkId.style.cssText = "background-color: white;";
+      sections[i].classList.add("your-active-class");
+      sections[i].style.cssText = "background-color: black;";
     }
   }
 };
