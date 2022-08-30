@@ -6,7 +6,7 @@ Run:
 - npm run start
 - npm run build-dev
 
-Enter: Tokyo then click Search
+Enter: Tokyo, pick a date then click Search
 Test:
 
 - npm run test
