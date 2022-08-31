@@ -37,14 +37,28 @@
   }
   
   .card-body {
-    width: 75%;
+    width: 100%;
     @media all and (max-width: 800px) {
       display: grid
     }
   }
-
+  .card-header{
+    border: 1px solid black;
+    margin-left: 15px;
+    padding-left: 6px;
+  }
   .card-content{
     display: flex;
+    margin-left: 16px;
+    border: 1px solid black;
+    @media all and (max-width: 800px) {
+      display: grid
+    }
+  }
+  .card-content-image{
+    display: flex;
+    margin-left: 16px;
+    border:1px solid black;
     @media all and (max-width: 800px) {
       display: grid
     }

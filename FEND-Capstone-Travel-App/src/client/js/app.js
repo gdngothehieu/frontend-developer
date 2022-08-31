@@ -92,7 +92,7 @@ const handleSubmit = async (e) => {
 
     </div>
     <div class="card-body" >
-        <div class="card-content">
+        <div class="card-content-image">
                 <div class="image-container"><img src=${
                   pixabayData.hits[0].webformatURL
                 } width="128px" height="128px" /> </div>
