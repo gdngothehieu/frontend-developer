@@ -1,9 +1,10 @@
 const dotenv = require("dotenv");
 const axios = require("axios");
 dotenv.config();
-const GEONAMES_USERNAME = process.env.GEONAMES_USERNAME;
-const WEATHERBIT_API_KEY = process.env.WEATHERBIT_API_KEY;
-const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY;
+const GEONAMES_USERNAME = "gdngothehieu";
+
+const WEATHERBIT_API_KEY = "2a0121063ad24033b30a2d8532075936";
+const PIXABAY_API_KEY = "29570620-da60fab639d51358578f4869c";
 
 exports.homePage = (req, res) => {
   res.json({ message: "Welcome to Travel App", status: "Success" });
