@@ -36,3 +36,18 @@
     border-spacing: 0;
   }
   
+  .card-body {
+    width: 75%;
+    @media all and (max-width: 800px) {
+      display: grid
+    }
+  }
+
+  .card-content{
+    display: flex;
+    @media all and (max-width: 800px) {
+      display: grid
+    }
+  }
+
+  .image-container{}

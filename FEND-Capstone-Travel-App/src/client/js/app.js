@@ -91,25 +91,25 @@ const handleSubmit = async (e) => {
     }</h5>
 
     </div>
-    <div class="card-body" style="width: 75%">
-        <div style="display: flex;">
-                <div style="width:25%; margin-right: 19px " style><img src=${
+    <div class="card-body" >
+        <div class="card-content">
+                <div class="image-container"><img src=${
                   pixabayData.hits[0].webformatURL
                 } width="128px" height="128px" /> </div>
-                <div style="width:75%">
+                <div class="card-body">
                     
-                        <div style="display:flex">
+                        <div class="card-content">
                             <p style="font-weight: bold; padding-right: 9px">Departing:</p>
                             <p class="card-text" > ${departureDate.value}</p>
                         </div>
-                        <div style="display:flex">
+                        <div class="card-content">
 
                             <p class="card-text" style="font-weight:bold; padding-right: 9px">Typical weather for then is (Celcius):</p>
                             <p class="card-text">High: ${
                               weatherData[0].app_max_temp
                             }, Low: ${weatherData[0].app_min_temp}</p>
                         </div>
-                        <div style="display:flex">
+                        <div class="card-content">
 
                             <p class="card-text" style="font-weight:bold; padding-right: 9px">Description: </p>
                             
