@@ -5,7 +5,7 @@ var cors = require("cors");
 const apiController = require("./controllers/apiController");
 
 const app = express();
-const port = 9001;
+const port = 8080;
 
 app.use(cors());
 // to use json

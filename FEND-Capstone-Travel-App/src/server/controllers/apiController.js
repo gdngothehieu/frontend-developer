@@ -7,7 +7,7 @@ const WEATHERBIT_API_KEY = "2a0121063ad24033b30a2d8532075936";
 const PIXABAY_API_KEY = "29570620-da60fab639d51358578f4869c";
 
 exports.homePage = (req, res) => {
-  res.sendFile("./dist/index.html");
+  res.sendFile(__dirname + "./dist/index.html");
 };
 
 exports.getGeoNameLocations = async (req, res) => {
